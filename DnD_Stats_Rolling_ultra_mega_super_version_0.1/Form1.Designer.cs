@@ -29,25 +29,27 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rollButton = new System.Windows.Forms.Button();
+            this.result1 = new System.Windows.Forms.Label();
             this.rollings1 = new System.Windows.Forms.Label();
+            this.rollButton = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.result2 = new System.Windows.Forms.Label();
             this.rollings2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.result3 = new System.Windows.Forms.Label();
             this.rollings3 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.result4 = new System.Windows.Forms.Label();
             this.rollings4 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.result5 = new System.Windows.Forms.Label();
             this.rollings5 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.rollings6 = new System.Windows.Forms.Label();
-            this.result1 = new System.Windows.Forms.Label();
-            this.result2 = new System.Windows.Forms.Label();
-            this.result3 = new System.Windows.Forms.Label();
-            this.result4 = new System.Windows.Forms.Label();
-            this.result5 = new System.Windows.Forms.Label();
             this.result6 = new System.Windows.Forms.Label();
+            this.rollings6 = new System.Windows.Forms.Label();
+            this.pidoradar = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -69,18 +71,16 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Результат 1";
             // 
-            // rollButton
+            // result1
             // 
-            this.rollButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.rollButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rollButton.ForeColor = System.Drawing.Color.White;
-            this.rollButton.Location = new System.Drawing.Point(12, 370);
-            this.rollButton.Name = "rollButton";
-            this.rollButton.Size = new System.Drawing.Size(258, 47);
-            this.rollButton.TabIndex = 1;
-            this.rollButton.Text = "Рулон";
-            this.rollButton.UseVisualStyleBackColor = false;
-            this.rollButton.Click += new System.EventHandler(this.rollButton_Click);
+            this.result1.AutoSize = true;
+            this.result1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.result1.ForeColor = System.Drawing.Color.Maroon;
+            this.result1.Location = new System.Drawing.Point(158, 25);
+            this.result1.Name = "result1";
+            this.result1.Size = new System.Drawing.Size(55, 13);
+            this.result1.TabIndex = 1;
+            this.result1.Text = "............";
             // 
             // rollings1
             // 
@@ -92,6 +92,19 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
             this.rollings1.Size = new System.Drawing.Size(82, 13);
             this.rollings1.TabIndex = 0;
             this.rollings1.Text = ".........................";
+            // 
+            // rollButton
+            // 
+            this.rollButton.BackColor = System.Drawing.Color.Maroon;
+            this.rollButton.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rollButton.ForeColor = System.Drawing.Color.White;
+            this.rollButton.Location = new System.Drawing.Point(12, 370);
+            this.rollButton.Name = "rollButton";
+            this.rollButton.Size = new System.Drawing.Size(258, 47);
+            this.rollButton.TabIndex = 1;
+            this.rollButton.Text = "Рулон";
+            this.rollButton.UseVisualStyleBackColor = false;
+            this.rollButton.Click += new System.EventHandler(this.rollButton_Click);
             // 
             // groupBox2
             // 
@@ -105,6 +118,17 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Результат 2";
+            // 
+            // result2
+            // 
+            this.result2.AutoSize = true;
+            this.result2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.result2.ForeColor = System.Drawing.Color.Maroon;
+            this.result2.Location = new System.Drawing.Point(158, 25);
+            this.result2.Name = "result2";
+            this.result2.Size = new System.Drawing.Size(55, 13);
+            this.result2.TabIndex = 2;
+            this.result2.Text = "............";
             // 
             // rollings2
             // 
@@ -130,6 +154,17 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Результат 3";
             // 
+            // result3
+            // 
+            this.result3.AutoSize = true;
+            this.result3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.result3.ForeColor = System.Drawing.Color.Maroon;
+            this.result3.Location = new System.Drawing.Point(158, 25);
+            this.result3.Name = "result3";
+            this.result3.Size = new System.Drawing.Size(55, 13);
+            this.result3.TabIndex = 3;
+            this.result3.Text = "............";
+            // 
             // rollings3
             // 
             this.rollings3.AutoSize = true;
@@ -153,6 +188,17 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Результат 4";
+            // 
+            // result4
+            // 
+            this.result4.AutoSize = true;
+            this.result4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.result4.ForeColor = System.Drawing.Color.Maroon;
+            this.result4.Location = new System.Drawing.Point(158, 25);
+            this.result4.Name = "result4";
+            this.result4.Size = new System.Drawing.Size(55, 13);
+            this.result4.TabIndex = 4;
+            this.result4.Text = "............";
             // 
             // rollings4
             // 
@@ -178,6 +224,17 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Результат 5";
             // 
+            // result5
+            // 
+            this.result5.AutoSize = true;
+            this.result5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.result5.ForeColor = System.Drawing.Color.Maroon;
+            this.result5.Location = new System.Drawing.Point(158, 25);
+            this.result5.Name = "result5";
+            this.result5.Size = new System.Drawing.Size(55, 13);
+            this.result5.TabIndex = 5;
+            this.result5.Text = "............";
+            // 
             // rollings5
             // 
             this.rollings5.AutoSize = true;
@@ -202,72 +259,6 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Результат 6";
             // 
-            // rollings6
-            // 
-            this.rollings6.AutoSize = true;
-            this.rollings6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.rollings6.ForeColor = System.Drawing.Color.Black;
-            this.rollings6.Location = new System.Drawing.Point(6, 25);
-            this.rollings6.Name = "rollings6";
-            this.rollings6.Size = new System.Drawing.Size(82, 13);
-            this.rollings6.TabIndex = 0;
-            this.rollings6.Text = ".........................";
-            // 
-            // result1
-            // 
-            this.result1.AutoSize = true;
-            this.result1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.result1.ForeColor = System.Drawing.Color.Maroon;
-            this.result1.Location = new System.Drawing.Point(158, 25);
-            this.result1.Name = "result1";
-            this.result1.Size = new System.Drawing.Size(55, 13);
-            this.result1.TabIndex = 1;
-            this.result1.Text = "............";
-            // 
-            // result2
-            // 
-            this.result2.AutoSize = true;
-            this.result2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.result2.ForeColor = System.Drawing.Color.Maroon;
-            this.result2.Location = new System.Drawing.Point(158, 25);
-            this.result2.Name = "result2";
-            this.result2.Size = new System.Drawing.Size(55, 13);
-            this.result2.TabIndex = 2;
-            this.result2.Text = "............";
-            // 
-            // result3
-            // 
-            this.result3.AutoSize = true;
-            this.result3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.result3.ForeColor = System.Drawing.Color.Maroon;
-            this.result3.Location = new System.Drawing.Point(158, 25);
-            this.result3.Name = "result3";
-            this.result3.Size = new System.Drawing.Size(55, 13);
-            this.result3.TabIndex = 3;
-            this.result3.Text = "............";
-            // 
-            // result4
-            // 
-            this.result4.AutoSize = true;
-            this.result4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.result4.ForeColor = System.Drawing.Color.Maroon;
-            this.result4.Location = new System.Drawing.Point(158, 25);
-            this.result4.Name = "result4";
-            this.result4.Size = new System.Drawing.Size(55, 13);
-            this.result4.TabIndex = 4;
-            this.result4.Text = "............";
-            // 
-            // result5
-            // 
-            this.result5.AutoSize = true;
-            this.result5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.result5.ForeColor = System.Drawing.Color.Maroon;
-            this.result5.Location = new System.Drawing.Point(158, 25);
-            this.result5.Name = "result5";
-            this.result5.Size = new System.Drawing.Size(55, 13);
-            this.result5.TabIndex = 5;
-            this.result5.Text = "............";
-            // 
             // result6
             // 
             this.result6.AutoSize = true;
@@ -279,12 +270,36 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
             this.result6.TabIndex = 6;
             this.result6.Text = "............";
             // 
+            // rollings6
+            // 
+            this.rollings6.AutoSize = true;
+            this.rollings6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rollings6.ForeColor = System.Drawing.Color.Black;
+            this.rollings6.Location = new System.Drawing.Point(6, 25);
+            this.rollings6.Name = "rollings6";
+            this.rollings6.Size = new System.Drawing.Size(82, 13);
+            this.rollings6.TabIndex = 0;
+            this.rollings6.Text = ".........................";
+            // 
+            // pidoradar
+            // 
+            this.pidoradar.AutoSize = true;
+            this.pidoradar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.pidoradar.Location = new System.Drawing.Point(21, 422);
+            this.pidoradar.Name = "pidoradar";
+            this.pidoradar.Size = new System.Drawing.Size(170, 17);
+            this.pidoradar.TabIndex = 4;
+            this.pidoradar.TabStop = true;
+            this.pidoradar.Text = "Режим пидораса и слабости";
+            this.pidoradar.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(282, 428);
+            this.ClientSize = new System.Drawing.Size(282, 451);
+            this.Controls.Add(this.pidoradar);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -293,6 +308,7 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
             this.Controls.Add(this.rollButton);
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "DnD_Roller_v0.1";
             this.groupBox1.ResumeLayout(false);
@@ -308,6 +324,7 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -332,6 +349,7 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label result6;
         private System.Windows.Forms.Label rollings6;
+        private System.Windows.Forms.RadioButton pidoradar;
     }
 }
 

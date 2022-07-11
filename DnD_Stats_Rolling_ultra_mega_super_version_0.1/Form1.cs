@@ -16,12 +16,19 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
         {
             InitializeComponent();
         }
-        static int[] Rolling4(Random random)
+        int[] Rolling4(Random random)
         {
             int[] rollResults = new int[4];
             for (int i = 0; i < 4; i++)
             {
-                rollResults[i] = random.Next(1, 7);
+                if (pidoradar.Checked)
+                {
+                    rollResults[i] = random.Next(4, 7);
+                }
+                else 
+                {
+                    rollResults[i] = random.Next(1, 7);
+                }
             }
             return rollResults;
         }
