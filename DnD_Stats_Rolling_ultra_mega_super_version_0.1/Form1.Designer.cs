@@ -49,7 +49,7 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.result6 = new System.Windows.Forms.Label();
             this.rollings6 = new System.Windows.Forms.Label();
-            this.pidoradar = new System.Windows.Forms.RadioButton();
+            this.pidoradar = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -284,13 +284,11 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
             // pidoradar
             // 
             this.pidoradar.AutoSize = true;
-            this.pidoradar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.pidoradar.Location = new System.Drawing.Point(21, 422);
             this.pidoradar.Name = "pidoradar";
-            this.pidoradar.Size = new System.Drawing.Size(170, 17);
+            this.pidoradar.Size = new System.Drawing.Size(110, 17);
             this.pidoradar.TabIndex = 4;
-            this.pidoradar.TabStop = true;
-            this.pidoradar.Text = "Режим пидораса и слабости";
+            this.pidoradar.Text = "режим слабости";
             this.pidoradar.UseVisualStyleBackColor = true;
             // 
             // Form1
@@ -349,7 +347,7 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label result6;
         private System.Windows.Forms.Label rollings6;
-        private System.Windows.Forms.RadioButton pidoradar;
+        private System.Windows.Forms.CheckBox pidoradar;
     }
 }
 
