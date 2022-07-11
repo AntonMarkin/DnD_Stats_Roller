@@ -49,13 +49,18 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.result6 = new System.Windows.Forms.Label();
             this.rollings6 = new System.Windows.Forms.Label();
-            this.pidoradar = new System.Windows.Forms.CheckBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.normisradar = new System.Windows.Forms.RadioButton();
+            this.silaradar = new System.Windows.Forms.RadioButton();
+            this.d20radar = new System.Windows.Forms.RadioButton();
+            this.pidoradar = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -281,14 +286,62 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
             this.rollings6.TabIndex = 0;
             this.rollings6.Text = ".........................";
             // 
+            // groupBox7
+            // 
+            this.groupBox7.BackColor = System.Drawing.Color.Maroon;
+            this.groupBox7.Controls.Add(this.pidoradar);
+            this.groupBox7.Controls.Add(this.d20radar);
+            this.groupBox7.Controls.Add(this.silaradar);
+            this.groupBox7.Controls.Add(this.normisradar);
+            this.groupBox7.Font = new System.Drawing.Font("Yu Gothic", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.groupBox7.ForeColor = System.Drawing.Color.White;
+            this.groupBox7.Location = new System.Drawing.Point(12, 423);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(258, 68);
+            this.groupBox7.TabIndex = 4;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Модификаторы";
+            // 
+            // normisradar
+            // 
+            this.normisradar.AutoSize = true;
+            this.normisradar.Checked = true;
+            this.normisradar.Location = new System.Drawing.Point(6, 19);
+            this.normisradar.Name = "normisradar";
+            this.normisradar.Size = new System.Drawing.Size(98, 20);
+            this.normisradar.TabIndex = 0;
+            this.normisradar.TabStop = true;
+            this.normisradar.Text = "нормис";
+            this.normisradar.UseVisualStyleBackColor = true;
+            // 
+            // silaradar
+            // 
+            this.silaradar.AutoSize = true;
+            this.silaradar.Location = new System.Drawing.Point(130, 19);
+            this.silaradar.Name = "silaradar";
+            this.silaradar.Size = new System.Drawing.Size(74, 20);
+            this.silaradar.TabIndex = 1;
+            this.silaradar.Text = "сила";
+            this.silaradar.UseVisualStyleBackColor = true;
+            // 
+            // d20radar
+            // 
+            this.d20radar.AutoSize = true;
+            this.d20radar.Location = new System.Drawing.Point(6, 42);
+            this.d20radar.Name = "d20radar";
+            this.d20radar.Size = new System.Drawing.Size(47, 20);
+            this.d20radar.TabIndex = 2;
+            this.d20radar.Text = "d20";
+            this.d20radar.UseVisualStyleBackColor = true;
+            // 
             // pidoradar
             // 
             this.pidoradar.AutoSize = true;
-            this.pidoradar.Location = new System.Drawing.Point(21, 422);
+            this.pidoradar.Location = new System.Drawing.Point(130, 42);
             this.pidoradar.Name = "pidoradar";
-            this.pidoradar.Size = new System.Drawing.Size(110, 17);
-            this.pidoradar.TabIndex = 4;
-            this.pidoradar.Text = "режим слабости";
+            this.pidoradar.Size = new System.Drawing.Size(122, 20);
+            this.pidoradar.TabIndex = 3;
+            this.pidoradar.Text = "слабость";
             this.pidoradar.UseVisualStyleBackColor = true;
             // 
             // Form1
@@ -296,8 +349,8 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(282, 451);
-            this.Controls.Add(this.pidoradar);
+            this.ClientSize = new System.Drawing.Size(282, 499);
+            this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -321,8 +374,9 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -347,7 +401,11 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label result6;
         private System.Windows.Forms.Label rollings6;
-        private System.Windows.Forms.CheckBox pidoradar;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.RadioButton pidoradar;
+        private System.Windows.Forms.RadioButton d20radar;
+        private System.Windows.Forms.RadioButton silaradar;
+        private System.Windows.Forms.RadioButton normisradar;
     }
 }
 

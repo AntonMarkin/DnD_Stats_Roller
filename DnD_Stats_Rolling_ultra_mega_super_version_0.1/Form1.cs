@@ -21,7 +21,11 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
             int[] rollResults = new int[4];
             for (int i = 0; i < 4; i++)
             {
-                if (pidoradar.Checked)
+                if(silaradar.Checked)
+                {
+                    rollResults[i] = random.Next(1, 3);
+                }
+                else if (pidoradar.Checked)
                 {
                     rollResults[i] = random.Next(4, 7);
                 }
@@ -64,9 +68,18 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
             Label[] resultFields = { result1, result2, result3, result4, result5, result6 };
             for (int i = 0; i < 6; i++)
             {
-                var rollRes = Rolling4(random);
-                rollingFields[i].Text = GetRollResults(rollRes);
-                resultFields[i].Text = GetResult(rollRes);
+                if (d20radar.Checked)
+                {
+                    int d20 = random.Next(1, 21);
+                    rollingFields[i].Text = "D20";
+                    resultFields[i].Text = "Значение: " + d20;
+                }
+                else
+                {
+                    var rollRes = Rolling4(random);
+                    rollingFields[i].Text = GetRollResults(rollRes);
+                    resultFields[i].Text = GetResult(rollRes);
+                }
             }
         }
     }
