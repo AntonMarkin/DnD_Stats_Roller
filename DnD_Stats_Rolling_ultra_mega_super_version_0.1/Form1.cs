@@ -23,7 +23,7 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
             {
                 if(silaradar.Checked)
                 {
-                    rollResults[i] = random.Next(1, 3);
+                    rollResults[i] = random.Next(1, 4);
                 }
                 else if (pidoradar.Checked)
                 {
@@ -81,6 +81,31 @@ namespace DnD_Stats_Rolling_ultra_mega_super_version_0._1
                     resultFields[i].Text = GetResult(rollRes);
                 }
             }
+        }
+
+        static int GetDiceType(string str)
+        {
+            int dice;
+            if (str != null) str = str.Substring(1);
+            else return 20;
+            return dice = Convert.ToInt32(str);
+        }
+        private void diceRoll_Click(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            int result = 0, dice = GetDiceType((string)listDiceBox.SelectedItem)+1;
+            string resultString = "Хлоп-поп и получаем: ";
+
+            for(int i = 0; i < countUpDown.Value; i++)
+            {
+                int rnd = random.Next(1, dice);
+                result += rnd;
+                resultString += rnd + " + ";
+            }
+            result += (int)bonusUpDown.Value;
+            resultString += bonusUpDown.Value + " = ";
+            diceRollResult.Text = resultString + result;
+            resultLabel.Text = "rezulto: " + Convert.ToString(result);
         }
     }
 }
